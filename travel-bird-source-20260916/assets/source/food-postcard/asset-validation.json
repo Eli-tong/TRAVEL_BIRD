@@ -1,0 +1,70 @@
+{
+  "strawberry-cloud-bun": {
+    "source": "assets/source/food-postcard/food-strawberry-cloud-bun.png",
+    "output": "public/art/foods/food-strawberry-cloud-bun.png",
+    "width": 1254,
+    "height": 1254,
+    "hasAlpha": true,
+    "transparentPixels": 842802,
+    "translucentPixels": 729414,
+    "edgeNonzero": 8,
+    "edgeMaxAlpha": 1,
+    "bounds": {
+      "left": 65,
+      "top": 152,
+      "right": 1215,
+      "bottom": 1069
+    },
+    "outputBytes": 177315
+  },
+  "carrot-crescent-crisp": {
+    "source": "assets/source/food-postcard/food-carrot-crescent-crisp.png",
+    "output": "public/art/foods/food-carrot-crescent-crisp.png",
+    "width": 1254,
+    "height": 1254,
+    "hasAlpha": true,
+    "transparentPixels": 1172534,
+    "translucentPixels": 399729,
+    "edgeNonzero": 0,
+    "edgeMaxAlpha": 0,
+    "bounds": {
+      "left": 212,
+      "top": 173,
+      "right": 1057,
+      "bottom": 1095
+    },
+    "outputBytes": 109970
+  },
+  "tricolor-travel-bites": {
+    "source": "assets/source/food-postcard/food-tricolor-travel-bites.png",
+    "output": "public/art/foods/food-tricolor-travel-bites.png",
+    "width": 1254,
+    "height": 1254,
+    "hasAlpha": true,
+    "transparentPixels": 1065430,
+    "translucentPixels": 506610,
+    "edgeNonzero": 3,
+    "edgeMaxAlpha": 1,
+    "bounds": {
+      "left": 100,
+      "top": 264,
+      "right": 1155,
+      "bottom": 1013
+    },
+    "outputBytes": 131322
+  },
+  "postcard-first-dandelion-hill-blue-quaker-front": {
+    "source": "assets/source/food-postcard/postcard-first-dandelion-hill-blue-quaker-front.png",
+    "output": "public/art/postcards/postcard-first-dandelion-hill-blue-quaker-front.webp",
+    "width": 1536,
+    "height": 1024,
+    "outputBytes": 246186
+  },
+  "postcard-paper-back-dandelion": {
+    "source": "assets/source/food-postcard/postcard-paper-back-dandelion.png",
+    "output": "public/art/postcards/postcard-paper-back-dandelion.webp",
+    "width": 1536,
+    "height": 1024,
+    "outputBytes": 104972
+  }
+}

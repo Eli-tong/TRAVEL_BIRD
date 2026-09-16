@@ -1,0 +1,126 @@
+[
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "noTitleOrTextButtons": true,
+    "noPressedRectangles": true,
+    "keyboardFocus": {
+      "visible": true,
+      "style": "solid",
+      "width": "2px",
+      "color": "rgb(146, 106, 61)"
+    },
+    "motion": [
+      {
+        "id": "bird",
+        "base": {
+          "x": 269.8165015243902,
+          "y": 369.4916740023474,
+          "transform": "none",
+          "animations": 0
+        },
+        "mid": {
+          "x": 269.81650133830743,
+          "y": 369.4916740978641,
+          "transform": "matrix(0.994877, 0, 0, 1.00585, 0, 0)",
+          "animations": 1
+        },
+        "end": {
+          "x": 269.8165015243902,
+          "y": 369.4916740023474,
+          "transform": "none",
+          "animations": 0
+        }
+      },
+      {
+        "id": "travelBag",
+        "base": {
+          "x": 187.17466606858054,
+          "y": 492.57342753189795,
+          "transform": "none",
+          "animations": 0
+        },
+        "mid": {
+          "x": 187.17465998453386,
+          "y": 492.573434053996,
+          "transform": "matrix(1.01143, 0, 0, 0.982862, 0, 0)",
+          "animations": 1
+        },
+        "end": {
+          "x": 187.17466606858054,
+          "y": 492.57342753189795,
+          "transform": "none",
+          "animations": 0
+        }
+      }
+    ],
+    "repeatedClicksNoStacking": true,
+    "reducedMotion": true,
+    "saveUnchanged": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "noTitleOrTextButtons": true,
+    "noPressedRectangles": true,
+    "keyboardFocus": {
+      "visible": true,
+      "style": "solid",
+      "width": "2px",
+      "color": "rgb(146, 106, 61)"
+    },
+    "motion": [
+      {
+        "id": "bird",
+        "base": {
+          "x": 221.31173780487805,
+          "y": 240.96711169796555,
+          "transform": "none",
+          "animations": 0
+        },
+        "mid": {
+          "x": 221.31173501363614,
+          "y": 240.96709354979703,
+          "transform": "matrix(0.99488, 0, 0, 1.00585, 0, 0)",
+          "animations": 1
+        },
+        "end": {
+          "x": 221.31173780487805,
+          "y": 240.96711169796555,
+          "transform": "none",
+          "animations": 0
+        }
+      },
+      {
+        "id": "travelBag",
+        "base": {
+          "x": 153.59320175438597,
+          "y": 341.8467653508772,
+          "transform": "none",
+          "animations": 0
+        },
+        "mid": {
+          "x": 153.59320430968558,
+          "y": 341.84675108987176,
+          "transform": "matrix(1.00877, 0, 0, 0.986839, 0, 0)",
+          "animations": 1
+        },
+        "end": {
+          "x": 153.59320175438597,
+          "y": 341.8467653508772,
+          "transform": "none",
+          "animations": 0
+        }
+      }
+    ],
+    "repeatedClicksNoStacking": true,
+    "reducedMotion": true,
+    "saveUnchanged": true,
+    "errors": []
+  }
+]

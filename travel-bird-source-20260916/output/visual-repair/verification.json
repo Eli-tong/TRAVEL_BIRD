@@ -1,0 +1,26 @@
+{
+  "viewports": [
+    { "name": "mobile-small", "size": [320, 568], "room": "room-320x568.png", "interaction": "room-320x568-after-interaction.png" },
+    { "name": "mobile", "size": [390, 844], "room": "room-390x844.png", "interaction": "room-390x844-after-interaction.png", "postcard": "postcard-front-390x844.png" },
+    { "name": "desktop", "size": [1440, 1000], "room": "room-1440x1000.png", "interaction": "room-1440x1000-after-interaction.png" }
+  ],
+  "room": {
+    "source": "public/art/room-v2/blue-quaker-calm-corrected.png",
+    "anchorMode": "support-foot",
+    "supportAnchor": [238, 329],
+    "branchSupportPoint": [668, 708],
+    "branchSupportLine": { "from": [638, 713], "to": [668, 708] },
+    "sharedCoordinatePlane": [941, 1672],
+    "result": "rear support foot and forward foot visibly grip the sloped branch in all requested viewports; no viewport-specific translateY"
+  },
+  "postcard": {
+    "source": "assets/source/food-postcard/postcard-first-dandelion-hill-blue-quaker-front.png",
+    "inputPreviousRepair": "public/art/postcards/postcard-first-dandelion-hill-blue-quaker-front-repaired.png",
+    "output": "public/art/postcards/postcard-first-dandelion-hill-blue-quaker-front-v2-no-visible-nares.png",
+    "layerStatus": "merged-single-image",
+    "changedPixelBBox": [540, 484, 631, 543],
+    "changedPixelCount": 1324,
+    "result": "both residual dark edge lines removed in 400% and normal-size inspection; background, composition, text and face remain unchanged"
+  },
+  "tests": { "focused": "11 passed", "build": "tsc --noEmit and vite build passed", "fullSuite": "pre-existing v2/migration failures remain outside this visual change" }
+}

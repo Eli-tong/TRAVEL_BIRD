@@ -1,0 +1,69 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "entrances": 5,
+    "modalFocusAndInert": true,
+    "saveUnchangedForReadOnlyActions": true,
+    "resizeAndMin44": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      375,
+      667
+    ],
+    "entrances": 5,
+    "modalFocusAndInert": true,
+    "saveUnchangedForReadOnlyActions": true,
+    "resizeAndMin44": true,
+    "errors": []
+  },
+  {
+    "check": "cook, claim, select bread, refresh persistence",
+    "passed": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "entrances": 5,
+    "modalFocusAndInert": true,
+    "saveUnchangedForReadOnlyActions": true,
+    "resizeAndMin44": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "entrances": 5,
+    "modalFocusAndInert": true,
+    "saveUnchangedForReadOnlyActions": true,
+    "resizeAndMin44": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "entrances": 5,
+    "modalFocusAndInert": true,
+    "saveUnchangedForReadOnlyActions": true,
+    "resizeAndMin44": true,
+    "errors": []
+  },
+  {
+    "check": "debug independent hide, both hide, empty clicks inert, restore, no save writes, reset on refresh",
+    "passed": true
+  },
+  {
+    "check": "real traveling state hides both layers/hotspots; exit does not change journey",
+    "passed": true
+  }
+]

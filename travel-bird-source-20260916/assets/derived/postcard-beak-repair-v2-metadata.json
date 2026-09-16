@@ -1,0 +1,37 @@
+{
+  "input": "public/art/postcards/postcard-first-dandelion-hill-blue-quaker-front-repaired.png",
+  "output": "public/art/postcards/postcard-first-dandelion-hill-blue-quaker-front-v2-no-visible-nares.png",
+  "inputSize": [
+    1536,
+    1024
+  ],
+  "outputSize": [
+    1536,
+    1024
+  ],
+  "layerStatus": "merged-single-image",
+  "repairStatus": "local-beak-repair-complete",
+  "repairedRegions": [
+    {
+      "radius": [
+        20,
+        17
+      ],
+      "center": [
+        560,
+        501
+      ]
+    },
+    {
+      "radius": [
+        16,
+        20
+      ],
+      "center": [
+        615,
+        523
+      ]
+    }
+  ],
+  "scope": "Only two dark nostril components and their immediate beak-color neighborhood; outside ROI unchanged."
+}

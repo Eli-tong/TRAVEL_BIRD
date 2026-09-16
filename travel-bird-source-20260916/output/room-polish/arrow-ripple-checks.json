@@ -1,0 +1,53 @@
+[
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "arrowCenteredOnBoard": true,
+    "arrowWidth": 76,
+    "rippleAtUnifiedCoordinates": {
+      "left": "42%",
+      "top": "42%",
+      "pe": "none"
+    },
+    "noDuplicateRipple": true,
+    "modalBlocksScene": true,
+    "noOverflow": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "arrowCenteredOnBoard": true,
+    "arrowWidth": 76,
+    "rippleAtUnifiedCoordinates": {
+      "left": "42%",
+      "top": "42%",
+      "pe": "none"
+    },
+    "noDuplicateRipple": true,
+    "modalBlocksScene": true,
+    "noOverflow": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "arrowCenteredOnBoard": true,
+    "arrowWidth": 76,
+    "rippleAtUnifiedCoordinates": {
+      "left": "42%",
+      "top": "42%",
+      "pe": "none"
+    },
+    "noDuplicateRipple": true,
+    "modalBlocksScene": true,
+    "noOverflow": true,
+    "errors": []
+  }
+]
