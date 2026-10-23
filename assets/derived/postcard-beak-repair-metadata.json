@@ -1,0 +1,37 @@
+{
+  "input": "assets/source/food-postcard/postcard-first-dandelion-hill-blue-quaker-front.png",
+  "output": "public/art/postcards/postcard-first-dandelion-hill-blue-quaker-front-repaired.png",
+  "inputSize": [
+    1536,
+    1024
+  ],
+  "outputSize": [
+    1536,
+    1024
+  ],
+  "layerStatus": "merged-single-image",
+  "repairStatus": "local-beak-repair-complete",
+  "repairedRegions": [
+    {
+      "radius": [
+        16,
+        14
+      ],
+      "center": [
+        560,
+        501
+      ]
+    },
+    {
+      "radius": [
+        13,
+        17
+      ],
+      "center": [
+        615,
+        523
+      ]
+    }
+  ],
+  "scope": "Only two dark nostril components and their immediate beak-color neighborhood; outside ROI unchanged."
+}

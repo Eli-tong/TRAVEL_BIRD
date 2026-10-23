@@ -1,0 +1,53 @@
+{
+  "source": "public/art/room-v2/blue-quaker-calm-corrected.png",
+  "background": "public/art/room-v2/background.png",
+  "sourceSize": [
+    420,
+    540
+  ],
+  "alphaThreshold": 16,
+  "alphaBBoxInclusive": [
+    7,
+    37,
+    282,
+    362
+  ],
+  "feet": {
+    "leftLowestVisibleContact": [
+      184,
+      353
+    ],
+    "rightLowestVisibleContact": [
+      231,
+      348
+    ],
+    "supportFoot": "bird-left-foot, image-right/rear foot",
+    "supportAnchor": [
+      238,
+      329
+    ]
+  },
+  "branchSupport": {
+    "point": [
+      668,
+      708
+    ],
+    "lineFrom": [
+      638,
+      713
+    ],
+    "lineTo": [
+      668,
+      708
+    ]
+  },
+  "previousAnchor": [
+    207.5,
+    350.5
+  ],
+  "previousContact": [
+    651,
+    709
+  ],
+  "method": "Alpha scan plus 400% foot inspection; support anchor is the rear foot palm/grip center, branch support is the measured sloped top surface."
+}

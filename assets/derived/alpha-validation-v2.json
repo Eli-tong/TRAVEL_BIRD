@@ -1,0 +1,44 @@
+{
+  "blue-quaker-calm-cutout-v2.png": {
+    "size": [
+      1230,
+      1278
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent": 1039870,
+    "partial": 532029,
+    "opaque": 41,
+    "bbox_alpha_gt16": [
+      128,
+      164,
+      1067,
+      1151
+    ],
+    "border_max": 1
+  },
+  "travel-bag-cutout-v2.png": {
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent": 1088313,
+    "partial": 483477,
+    "opaque": 726,
+    "bbox_alpha_gt16": [
+      92,
+      344,
+      1158,
+      954
+    ],
+    "border_max": 1
+  }
+}

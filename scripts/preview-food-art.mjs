@@ -1,0 +1,18 @@
+import { chromium } from 'playwright';
+import { mkdir, writeFile } from 'node:fs/promises';
+const url = process.argv[2] || 'http://127.0.0.1:5175';
+const out = 'output/playwright/food-postcard';
+await mkdir(out, { recursive: true });
+const foods = [ ['strawberry-cloud-bun', '草莓云朵麦包'], ['carrot-crescent-crisp', '胡萝卜月牙脆饼'], ['tricolor-travel-bites', '三色旅行小团子'] ];
+const row = theme => `<section class="${theme}"><h2>${theme === 'light' ? '浅色底 · Light background' : '深色底 · Dark background'}</h2><div class="row">${foods.map(([id, name]) => `<article><img class="large" src="${url}/art/foods/food-${id}.png"><h3>${name}</h3><div class="small">${[50, 58, 64, 88].map(size => `<figure><img width="${size}" height="${size}" src="${url}/art/foods/food-${id}.png"><figcaption>${size}px</figcaption></figure>`).join('')}</div></article>`).join('')}</div></section>`;
+const html = `<!doctype html><html lang="zh-CN"><meta charset="UTF-8"><title>食物透明边缘验收</title><style>*{box-sizing:border-box}body{margin:0;font-family:Georgia,'Microsoft YaHei',serif;background:#e9e1d0;color:#554b3b}h1{font-size:25px;font-weight:500;margin:22px 30px 4px}p{margin:0 30px 18px;color:#776e5b;font-size:13px}.row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}section{padding:15px 30px}h2{font-size:14px;font-weight:400;margin:0 0 8px}article{text-align:center}h3{font-size:16px;font-weight:400;margin:0 0 9px}.large{width:235px;height:235px;object-fit:contain}.light{background:#f6edd9}.dark{background:#33423f;color:#f6edd9}.small{display:flex;align-items:end;justify-content:center;gap:20px;height:102px}figure{margin:0}figcaption{font:11px system-ui;opacity:.7}</style><h1>三份小小的旅行食物</h1><p>独立透明 PNG · 本地游戏资源 · 50 / 58 / 64 / 88px 实际显示尺寸检查</p>${row('light')}${row('dark')}</html>`;
+await writeFile(`${out}/food-alpha-board.html`, html);
+const browser = await chromium.launch({ headless: true });
+const page = await browser.newPage({ viewport: { width: 1280, height: 950 } });
+await page.setContent(html); await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map(i => i.decode())); });
+await page.screenshot({ path: `${out}/food-alpha-board.png`, fullPage: true });
+await page.setContent(`<html><meta charset="UTF-8"><style>body{background:#eee4cf;margin:24px;color:#514938;font:18px Georgia,'Microsoft YaHei',serif}.row{display:flex;align-items:center;gap:28px}.bird{width:260px;height:310px;object-fit:contain}.card{width:850px}h1{font-size:23px;font-weight:400}</style><h1>角色一致性 · 室内蓝色和尚鹦鹉与第一张旅行自拍</h1><div class="row"><img class="bird" src="${url}/art/room-v2/blue-quaker-calm.png"><img class="card" src="${url}/art/postcards/postcard-first-dandelion-hill-blue-quaker-front.webp"></div></html>`);
+await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map(i => i.decode())); });
+await page.screenshot({ path: `${out}/bird-consistency.png`, fullPage: true });
+await browser.close();
+console.log(`${out}/food-alpha-board.png; ${out}/bird-consistency.png`);

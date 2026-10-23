@@ -1,0 +1,83 @@
+{
+  "source": "assets/concepts/treehouse-interior-direction-01.png",
+  "clean_background": "assets/derived/treehouse-interior-background.png",
+  "source_size": [
+    941,
+    1672
+  ],
+  "method": "clean-plate difference constrained by 4x hand-authored support masks and connected foreground seeds; no color-key deletion",
+  "edge_policy": "difference-located contour with 0.45px antialias only; no broad feathering",
+  "difference_thresholds": {
+    "bird": 35,
+    "bag": 45
+  },
+  "mask_files": {
+    "bird": "assets/derived/masks/blue-quaker-calm-mask.png",
+    "bag": "assets/derived/masks/travel-bag-mask.png"
+  },
+  "preview": "assets/derived/approved-room-restored-preview.png",
+  "edge_checks": {
+    "bird": "output/matting-inspection/blue-quaker-edge-check.png",
+    "bag": "output/matting-inspection/travel-bag-edge-check.png"
+  },
+  "layers": {
+    "bird": {
+      "crop_box_xyxy": [
+        534,
+        530,
+        702,
+        721
+      ],
+      "anchor_in_source_xy": [
+        647,
+        713
+      ],
+      "anchor_in_cutout_xy": [
+        113,
+        183
+      ],
+      "visible_only": true,
+      "occlusion_note": "feet stop at the visible branch contact",
+      "alpha_report": {
+        "mode": "RGBA",
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 14336,
+        "opaque_pixels": 14602,
+        "partial_pixels": 3150,
+        "touches_all_crop_sides": true,
+        "enclosed_hole_count": 0,
+        "enclosed_hole_areas": []
+      }
+    },
+    "bag": {
+      "crop_box_xyxy": [
+        368,
+        909,
+        533,
+        1007
+      ],
+      "anchor_in_source_xy": [
+        461,
+        1004
+      ],
+      "anchor_in_cutout_xy": [
+        93,
+        95
+      ],
+      "visible_only": true,
+      "occlusion_note": "rear strap remains visible only where it is not hidden by the bag body",
+      "alpha_report": {
+        "mode": "RGBA",
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 3157,
+        "opaque_pixels": 10660,
+        "partial_pixels": 2353,
+        "touches_all_crop_sides": true,
+        "enclosed_hole_count": 0,
+        "enclosed_hole_areas": []
+      }
+    }
+  }
+}
