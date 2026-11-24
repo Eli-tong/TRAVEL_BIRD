@@ -1,0 +1,42 @@
+$ vitest run "--maxWorkers=2" "--exclude" "src/ui/BirdButton.test.tsx"
+
+ RUN  v3.2.7 C:/Users/wenru/Documents/ChatGPT/旅行小鸟
+
+ ✓ src/App.garden.test.tsx (7 tests) 330ms
+ ✓ src/ui/albumPageTurn.test.ts (24 tests) 1269ms
+   ✓ soft postcard paper mesh > keeps an unbroken sheet of constant row length above the book throughout the turn  1206ms
+ ✓ src/App.travel.test.tsx (3 tests) 259ms
+ ✓ src/App.i18n.test.tsx (3 tests) 178ms
+ ✓ src/ui/PostcardAlbum.test.tsx (9 tests) 202ms
+ ✓ src/App.album.test.tsx (1 test) 143ms
+ ✓ src/ui/RoomScene.test.tsx (10 tests) 134ms
+ ✓ src/ui/PostcardViewer.test.tsx (3 tests) 136ms
+ ✓ src/ui/BirdRoutineSprite.test.tsx (15 tests) 89ms
+ ✓ src/ui/PostcardPreview.test.tsx (4 tests) 112ms
+ ✓ src/ui/GardenScene.test.tsx (20 tests) 112ms
+ ✓ src/App.inventoryArt.test.tsx (1 test) 89ms
+ ✓ src/ui/Modal.test.tsx (1 test) 85ms
+ ✓ src/ui/PanelSurface.test.tsx (2 tests) 69ms
+ ✓ src/ui/useBirdSpeech.test.tsx (3 tests) 51ms
+ ✓ src/ui/useBirdMood.test.tsx (3 tests) 41ms
+ ✓ src/ui/Art.test.tsx (3 tests) 33ms
+ ✓ src/domain/firstTrip.test.ts (20 tests) 19ms
+ ✓ src/domain/travelChoreography.test.ts (41 tests) 17ms
+ ✓ src/domain/game.test.ts (36 tests) 17ms
+ ✓ src/domain/foodPostcard.test.ts (10 tests) 12ms
+ ✓ src/domain/travelRewardChannels.test.ts (7 tests) 11ms
+ ✓ src/domain/birdRoutine.test.ts (18 tests) 8ms
+ ✓ src/ui/gardenLayout.test.ts (21 tests) 7ms
+ ✓ src/i18n/dictionary.test.ts (5 tests) 6ms
+ ✓ src/ui/roomLayout.test.ts (8 tests) 6ms
+ ✓ src/ui/preload.test.ts (1 test) 5ms
+ ✓ src/i18n/languageSave.test.ts (2 tests) 4ms
+ ✓ src/domain/gardenMotion.test.ts (3 tests) 3ms
+ ✓ src/domain/birdMood.test.ts (4 tests) 3ms
+ ✓ src/ui/postcardLayout.test.ts (1 test) 2ms
+
+ Test Files  31 passed (31)
+      Tests  289 passed (289)
+   Start at  15:45:33
+   Duration  51.53s (transform 639ms, setup 0ms, collect 16.12s, tests 3.46s, environment 20.93s, prepare 8.23s)
+

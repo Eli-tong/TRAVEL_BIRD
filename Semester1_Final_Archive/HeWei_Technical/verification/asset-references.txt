@@ -1,0 +1,16 @@
+{
+  "root": "public",
+  "referencesChecked": 110,
+  "imageFiles": 181,
+  "imageBytes": 147927507,
+  "missing": []
+}
+{
+  "root": "dist",
+  "referencesChecked": 110,
+  "imageFiles": 181,
+  "imageBytes": 147927507,
+  "missing": []
+}
+Build entry exists: /assets/index-DRnl3SZA.js
+Build entry exists: /assets/index-BN_6M6W_.css

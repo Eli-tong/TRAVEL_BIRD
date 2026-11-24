@@ -1,0 +1,16 @@
+6fe1cb5a4630dcfd19523bd292987022fd5f22d7 2026-09-09T18:48:58+08:00 feat: build travel bird web game
+ca9c674ee04d2cd272ec7f36b925c00ed055b75b 2026-09-09T12:01:03+01:00 Redesign bird game around an interactive illustrated home and garden
+b9955354b6fed2cbdc5613bc3f052344dbaae736 2026-09-09T12:24:48+01:00 Use watercolor fluffy bird character artwork
+78b7610a2907b342a3ef96b0f0617bb5fd25dbbc 2026-09-12T20:41:16+08:00 feat: add treehouse panel surface shell
+a5743186c187a8339b46ea932ce4e37ca4c668c4 2026-09-12T20:44:04+08:00 feat: map room panels to distinct surfaces
+b16816bbf914bde82fe604c5f829a22453e3e266 2026-09-12T23:11:11+08:00 chore: publish latest travel bird site
+7984e3e6362095da91122a9c5d3ec79c87fa3fb0 2026-10-20T18:41:56+08:00 feat: complete autonomous travel and garden reward loop
+8fa6a8a1fc76020a97667a6df0468580f11697b6 2026-10-20T18:49:14+08:00 feat: add autonomous bird routine state machine
+4f63d3688e89882a888884fd2808c595b4f97c4a 2026-10-20T18:59:30+08:00 feat: persist autonomous bird routine
+47bafb040b82f4a908d6e1fcb94c360fab1f7607 2026-10-20T19:02:06+08:00 fix: reset bird routine after offline travel return
+bcf2fc3f94455939b819613150cf7a1def02296c 2026-10-21T14:59:25+08:00 feat: show autonomous bird routines across home scenes
+2f2f0b06e6567c2e987a306e02fcafeab05cdaf3 2026-10-21T16:10:06+08:00 test: verify mature crop art in the garden loop
+08687d020c9ce6315c9d3111cc08696d403b4282 2026-10-21T16:50:11+08:00 refactor: register postcard front art explicitly
+d6dc43aa841a1eb86551431ebd9c045013cdc3a7 2026-10-23T18:32:25+08:00 fix: smooth room flight and bed transitions
+8ec20db13d03d94887367b85e9a3c8349f513079 2026-10-23T19:14:57+08:00 fix: mirror doorway hops and speed garden walks
+c6c279016f8e5bb16b8e5f3e897fdb0d187a6b8c 2026-10-23T13:40:07+08:00 test: verify polished garden bird motion

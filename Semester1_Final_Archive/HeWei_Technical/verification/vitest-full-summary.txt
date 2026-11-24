@@ -1,0 +1,5 @@
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+Error: Failed to resolve import "./BirdButton" from "src/ui/BirdButton.test.tsx". Does the file exist?
+ Test Files  1 failed | 31 passed (32)
+      Tests  289 passed (289)
+   Start at  15:36:16

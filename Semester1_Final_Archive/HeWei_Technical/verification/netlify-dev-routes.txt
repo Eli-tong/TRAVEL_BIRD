@@ -1,0 +1,9 @@
+Netlify CLI 27.20.1, offline, final dist
+/ 200 text/html; charset=utf-8
+/art/room-v2/background.png 200 image/png
+/art/room-v2/does-not-exist.png 404 text/html; charset=utf-8
+/assets/index-DRnl3SZA.js 200 application/javascript; charset=utf-8
+/assets/index-BN_6M6W_.css 200 text/css; charset=utf-8
+/assets/missing.js 404 text/html; charset=utf-8
+/fonts/missing.woff2 404 text/html; charset=utf-8
+/missing-route 200 text/html; charset=utf-8

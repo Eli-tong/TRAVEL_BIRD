@@ -1,0 +1,5 @@
+Target http://127.0.0.1:4312/ Engine chrome 157.0.8103.80 2026-11-24T07:47:06.887Z
+PASS room recovers after first request fails /art/room-v2/background.png -> /art/room-v2/background.png?retry=1
+PASS room two failures then existing alert /art/room-v2/background.png -> /art/room-v2/background.png?retry=1
+PASS garden recovers after first request fails /art/garden-v1/background-away.png -> /art/garden-v1/background-away.png?retry=1
+PASS garden two failures then existing alert /art/garden-v1/background-away.png -> /art/garden-v1/background-away.png?retry=1

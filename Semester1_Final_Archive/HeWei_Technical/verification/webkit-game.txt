@@ -1,0 +1,2 @@
+Target http://127.0.0.1:4312/ Engine webkit 26.6 2026-11-24T07:45:30.454Z
+PASS two departures, hidden away bird, same-origin reload/reopen, offline settlement, double-click claim protection, carrot plot and crisp, JSON export, invalid and valid import

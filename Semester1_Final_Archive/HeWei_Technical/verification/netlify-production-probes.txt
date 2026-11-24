@@ -1,0 +1,65 @@
+Netlify production GET probes 2026-11-24 (UTC+8)
+.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 24 Nov 2026 07:29:49 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867BZVHV5JCV00MT6KKZENC
+
+assets_index-CMvK51Jd.js.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: application/javascript; charset=UTF-8
+Date: Tue, 24 Nov 2026 07:29:50 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867C0H7E8312VEY10YQTBMC
+
+assets_index-T3bTNP28.css.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: text/css; charset=UTF-8
+Date: Tue, 24 Nov 2026 07:29:52 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867C2BPG5CJX2SRNZAY1GR2
+
+art_room-v2_background.png.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: image/png
+Date: Tue, 24 Nov 2026 07:30:03 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867CDFA7VR10E9TQW1JKS3V
+
+art_room-v2_trunk-foreground.png.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: image/png
+Date: Tue, 24 Nov 2026 07:29:58 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867C8DCBM6KWD2BCB9QZSDZ
+
+art_room-v2_does-not-exist.png.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 24 Nov 2026 07:30:05 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867CFK9BX685YCSA9RDXPEB
+
+assets_missing.js.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 24 Nov 2026 07:30:06 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867CGNXHFRKCWERERVS20XV
+
+missing-route.headers
+HTTP/1.1 200 OK
+Cache-Control: public,max-age=0,must-revalidate
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 24 Nov 2026 07:30:07 GMT
+Server: Netlify
+X-Nf-Request-Id: 01M867CHPKASBDV921E2ZFWPBA
+
