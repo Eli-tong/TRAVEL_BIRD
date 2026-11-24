@@ -1,62 +1,53 @@
-# 旅行小鸟
+[README.md](https://github.com/user-attachments/files/35321505/README.md)
+[README.md](https://github.com/user-attachments/files/35321498/README.md)# Travel Bird
 
-《旅行小鸟》是一款原创放置游戏手机网页体验版。玩家通过种植作物、制作食物、准备行囊，让小鸟外出旅行并带回明信片、种子、食谱和新目的地。
+Travel Bird is a mobile-first idle game developed for ENT303TC Team Technopreneurship at Xi’an Jiaotong-Liverpool University. Grow crops, cook travel food, and pack a bag for a blue Quaker parrot. The bird leaves on its own and brings home postcards and rewards that unlock more of the game.
 
-## 本地启动
+[Play Travel Bird on Netlify](https://tranquil-lokum-a62556.netlify.app/) · [Technical Evidence Archive](Semester1_Final_Archive/HeWei_Technical/README.md)
 
-```bash
-pnpm install
-pnpm dev -- --port 5173
-```
+## How to play
 
-打开 `http://127.0.0.1:5173/` 试玩。
+1. In the treehouse, open the kitchen and make a **Strawberry Cloud Bun**. When it is ready, collect it.
+2. Open the travel bag, choose **Windmill Fields** and the bun, then select **Finish packing**. The bird leaves after packing. In production, the main travel phase takes about five minutes, with departure and return animations in addition.
+3. After the bird returns, go through the treehouse door to the garden. Swipe or drag the garden to reach the mailbox and three planting plots. Collect the postcard from the mailbox and the seed and unlocks from the travel bag in the treehouse. Open the album from the menu to view collected postcards.
+4. Plant the carrot seed, harvest it when ready, and make a **Carrot Crescent Crisp**. Pack it for **Mosslight Forest** to start the second trip.
 
-## Netlify 部署
+The Settings menu supports English and Simplified Chinese. The game uses illustrated indoor and outdoor scenes, with a separate sprite for the bird and local image assets.
 
-这是 React + TypeScript + Vite 项目。Netlify 配置已写入 `netlify.toml`：构建命令为 `npm run build`，发布目录为 `dist`，并包含 SPA 刷新回退。部署时连接仓库或上传项目后，在 Build settings 中确认 Build command 为 `npm run build`、Publish directory 为 `dist`；构建完成后直接访问 Netlify 分配的 URL。手机浏览器打开同一 URL 即可使用。
+## Run locally
 
-## 构建
+The project uses React 19, TypeScript, and Vite. The 24 November verification used Node.js 24.22.3 and pnpm 11.25.0.
 
-```bash
+~~~bash
+pnpm install --frozen-lockfile
+pnpm dev --port 5173
+~~~
+
+[Open the local game](http://127.0.0.1:5173/). New saves created in development start with faster timers. The development-only **Play pace** setting can switch between development and relaxed play. New production saves start in relaxed play.
+
+~~~bash
 pnpm build
-```
+pnpm preview
+~~~
 
-构建产物在 `dist/`，可部署到任意静态网站托管服务。
+`pnpm build` type-checks the application and writes the production files to `dist/`. `pnpm preview` serves that build locally.
 
-## 测试
+## Saves
 
-```bash
-pnpm test
-```
+The game autosaves to `localStorage` under `travel-bird-save-v1`. It stores progress in the current browser and site origin. On reopening, the app checks saved timestamps and resolves elapsed tasks.
 
-测试覆盖资源扣减、种植返种、旅行奖励一次性领取、前两次旅行解锁、食物影响目的地、离线到期判断和存档导入校验。
+Use **Settings & save** to export a JSON backup or import a save. Invalid JSON or invalid save data leaves existing progress intact. Export a backup before clearing site data or changing devices.
 
-## 存档方式
+## Deploy to Netlify
 
-游戏使用 `localStorage` 自动保存进度，存档包含版本号、库存、土地、烹饪任务、解锁状态、小鸟状态、当前旅程、相册、旅行日志和设置。
+For a manual update, open the existing **tranquil-lokum-a62556** site's **Deploys** page and upload the built `dist/` folder. For a Git-connected deployment, use the repository root, the build command `npm run build`, and the publish directory `dist`. Vite copies the redirect rules into the publish directory. Static files under `/art/`, `/assets/`, and `/fonts/` return 404 when missing. Other unmatched paths use the SPA fallback. [Netlify configuration](netlify.toml) · [Publish rules](public/_redirects) · [Deployment handoff](Semester1_Final_Archive/HeWei_Technical/Upload_and_Deploy.md)
 
-进度仅保存在当前浏览器。清除网站数据或更换设备不会保留进度，建议在设置中导出 JSON 备份。导入存档会先校验版本、结构和库存数值；失败不会覆盖当前进度。
+## Verification and release status
 
-## 课堂演示模式
+On 24 November 2026, the production build and TypeScript check passed, and 110 asset references matched their files by exact path and case. Windows Chrome and Playwright WebKit with an iPhone 13 profile both completed the first two departures, separate reward claims, harvesting, and save import and export. The updated Netlify homepage references the same JavaScript and CSS entry filenames as the tested local build. Physical Android Chrome and iPhone Safari testing is pending. The original intermittent asset-loading issue remains open. [Technical verification](Semester1_Final_Archive/HeWei_Technical/Technical_Verification_Final.md) · [Device checklist](Semester1_Final_Archive/HeWei_Technical/Cross_Device_Test_Checklist.md)
 
-首次进入可选择：
+The full `pnpm test` scan reports a suite-load error in the historical `src/ui/BirdButton.test.tsx` draft because its component is missing. The following command passed 289 tests across 31 suites.
 
-- 快速试玩：作物 5 秒，烹饪 3 秒，旅行 15 秒。
-- 悠闲体验：小麦 2 分钟、胡萝卜 3 分钟、草莓 5 分钟，烹饪 10 秒，旅行 5 分钟。
-
-设置中可切换模式，只影响之后启动的任务，已开始任务保持原结束时间。
-
-## 场景交互改版
-
-主画面为原创 SVG 木屋，点门口进入三块土地的菜园，点灶台打开厨房，点手帐打开相册，点绿色包裹选择食物后出发。小鸟以北长尾山雀为造型参考，采用原创白色圆润身体、深色长尾与触摸跳跃反馈。归来时点信封领取礼物。已移除底部导航栏。
-
-所有插画组件保存在 `src/ui/Art.tsx`，无需远程素材。沿用原存档键 `travel-bird-save-v1`，同一网址同一浏览器可继续原进度。
-
-本次验证：生产构建通过；5 项领域逻辑测试通过。浏览器 QA 入口返回 ERR_BLOCKED_BY_CLIENT，未完成浏览器端端到端测试、360–430px 实测或 iPhone Safari / Android Chrome 真机验证。触摸拖动与左右滑动未实现，场景通过点击物件切换。
-
-## 绒毛与菜园更新
-
-- 小鸟增加柔和体积渐变、轮廓绒毛及胸前羽毛纹理；开心时眯眼，连续点击出现皱眉与躲闪。
-- 连续触摸有 10 条递进反馈：前 4 次亲近，第 5–7 次躲闪，第 8 次起不耐烦；停止触摸 8 秒后恢复。情绪仅影响表现，不扣资源、不影响旅行。
-- 菜园添加天空、山丘、苹果树、栅栏、花丛、池塘、石子路、浇水壶和蝴蝶，保留三块可操作土地。
-- 网站访问范围改为公开，访客无需 ChatGPT 登录，各自在本地浏览器保存进度。
+~~~bash
+pnpm test --maxWorkers=2 --exclude src/ui/BirdButton.test.tsx
+~~~
