@@ -1,0 +1,4 @@
+/art/*     /404.html    404
+/assets/*  /404.html    404
+/fonts/*   /404.html    404
+/*         /index.html  200
